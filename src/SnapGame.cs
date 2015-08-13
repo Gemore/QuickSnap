@@ -26,7 +26,29 @@ namespace CardGames
 			{
 				myGame.Start ();
 			}
+<<<<<<< HEAD
 				
+=======
+
+            if (myGame.IsStarted)
+            {
+                if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) &&
+                    SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
+                {
+                    //Insert sound here
+                    //Personal note: Pretty sure sound here will never play unless both
+                }
+                else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT))
+                {
+                    myGame.PlayerHit (0);
+                }
+                else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
+                {
+                    myGame.PlayerHit (1);
+                }
+            }
+
+>>>>>>> add-player-hit
 		}
 
 		/// <summary>
